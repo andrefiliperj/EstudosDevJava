@@ -1,0 +1,31 @@
+import java.io.IOException;
+import java.util.Scanner; 
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+  Scanner input = new Scanner(System.in);
+		    
+		    int codigopeca1, numerodepecas1;
+		    int codigopeca2, numerodepecas2;
+		    double valorpeca1, valorpeca2, valorfinal;
+		    
+		    codigopeca1 = input.nextInt(); 
+		    numerodepecas1 = input.nextInt(); 
+		    valorpeca1 = input.nextDouble();  
+		  
+		    codigopeca2 = input.nextInt(); 
+		    numerodepecas2 = input.nextInt();  
+		    valorpeca2 = input.nextDouble();
+		     
+		    
+		    valorfinal = numerodepecas1 * valorpeca1 + numerodepecas2 * valorpeca2;
+		    
+		    System.out.println(String.format("VALOR A PAGAR: R$ %.2f", valorfinal)); 
+		    
+		 
+    }
+ 
+}
+
